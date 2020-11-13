@@ -1,0 +1,41 @@
+﻿<Window x:Class="Coursework1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Coursework1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="653.918" Width="800">
+    <Grid x:Name="txtCourse">
+        <TextBlock x:Name="txtTitle" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Margin="0,30,0,0" Width="524" FontSize="36" FontWeight="Bold" TextDecorations="Underline"><Run Text="Student Record Entry F"/><Run Text="orm"/></TextBlock>
+        <TextBlock x:Name="txtFirstName" HorizontalAlignment="Left" TextWrapping="Wrap" Text="First Name(s):" VerticalAlignment="Top" Margin="50,120,0,0"/>
+        <TextBlock x:Name="txtSurname" TextWrapping="Wrap" VerticalAlignment="Top" Margin="416,120,316,0"><Run Text="Surname"/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Age:" VerticalAlignment="Top" Margin="50,160,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Course:" VerticalAlignment="Top" Margin="50,200,0,0"/>
+        <TextBox x:Name="txtFirstNameEntry" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="261" Margin="135,120,0,0"/>
+        <TextBox x:Name="txtSurnameEntry" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="481,120,50,0"/>
+        <TextBox x:Name="txtAgeEntry" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="49" Margin="135,159,0,0"/>
+        <TextBlock x:Name="txtAddress" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Address:" VerticalAlignment="Top" Margin="48,252,0,0"/>
+        <TextBox x:Name="txtAddress1Entry" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Margin="135,250,0,0"/>
+        <TextBox x:Name="txtAddress2Entry" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Margin="135,280,0,0"/>
+        <TextBlock x:Name="txtPostCode" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Postcode:" VerticalAlignment="Top" Margin="48,343,0,0" Width="57"/>
+        <TextBox x:Name="txtPostCodeEntry" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Margin="135,340,0,0"/>
+        <TextBlock x:Name="txtEmail" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Email:" VerticalAlignment="Top" Margin="48,401,0,0"/>
+        <TextBox x:Name="txtEmailEntry" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="290" Margin="132,401,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="48,468,0,0" Width="121"><Run Text="International Student"/><Run Text=":"/></TextBlock>
+        <CheckBox Content="Yes" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.624,0.96" Margin="169,469,0,0" Checked="CheckBox_Checked"/>
+        <CheckBox Content="No" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.624,0.96" Margin="169,489,0,0"/>
+        <ComboBox x:Name="cboCourse" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="134,200,0,0">
+            <ComboBoxItem Content="Art"/>
+            <ComboBoxItem Content="Computing"/>
+            <ComboBoxItem Content="Maths"/>
+        </ComboBox>
+        <TextBlock x:Name="lblCountry" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Country:" VerticalAlignment="Top" Margin="300,469,0,0" Visibility="Hidden"/>
+        <TextBlock x:Name="txtCity" HorizontalAlignment="Left" TextWrapping="Wrap" Text="City:" VerticalAlignment="Top" Margin="50,310,0,0"/>
+        <TextBox x:Name="txtCityEntry" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Margin="135,310,0,0"/>
+        <Button x:Name="btnValidate" Content="Check" VerticalAlignment="Top" Margin="637,550,80,0" Click="btnValidate_Click"/>
+        <Button x:Name="btnClear" Content="Clear All" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="80,550,0,0" Click="btnClear_Click"/>
+        <ComboBox x:Name="cboCountry" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="356,468,0,0" Visibility="Hidden"/>
+
+    </Grid>
+</Window>
